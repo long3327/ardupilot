@@ -294,6 +294,7 @@ void Copter::update_sensor_status_flags(void)
     case BRAKE:
     case THROW:
     case SMART_RTL:
+    case DRAWSTAR:
         control_sensors_enabled |= MAV_SYS_STATUS_SENSOR_Z_ALTITUDE_CONTROL;
         control_sensors_enabled |= MAV_SYS_STATUS_SENSOR_XY_POSITION_CONTROL;
         break;
